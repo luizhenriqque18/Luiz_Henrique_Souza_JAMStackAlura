@@ -13,7 +13,6 @@ const ButtonGhost = css`
 `;
 
 export const Button = styled.button`
-    font-family: 'Rubik', sans-serif;
     border: 0;
     cursor: pointer;
     padding: 12px 26px;

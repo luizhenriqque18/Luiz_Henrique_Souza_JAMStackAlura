@@ -5,7 +5,6 @@ export const MenuWrapper = styled.nav`
     justify-content: space-between;
     align-items: center;
     padding: 0 12px 0 12px;
-    ${ (props) => console.log(props)}
 `;
 
 MenuWrapper.LeftSide = styled.div`
@@ -23,7 +22,6 @@ MenuWrapper.RightSide = styled.div`
     margin: 0;
     padding: 0;
     list-style: none;
-    font-family: 'Rubik', sans-serif;
     
     /*Position*/
     display: flex;
