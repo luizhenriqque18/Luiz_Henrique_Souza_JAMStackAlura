@@ -2,6 +2,8 @@ import { ThemeProvider } from 'styled-components'
 import GlobalStyle from '../src/theme/GlobalStyle';
 import theme from './../src/theme/index';
 import Head from 'next/head';
+import Script from 'next/script'
+
 
 export default function App({ Component, pageProps }) {
   return (
