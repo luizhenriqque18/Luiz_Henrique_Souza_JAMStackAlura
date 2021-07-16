@@ -39,8 +39,7 @@ MenuWrapper.RightSide = styled.div`
         color: #88989E;
         transition: 200ms ease-in-out;
         &:hover,
-        &:focus {
-            font-weight: 500;
+        &:focus {   
             color: #070C0E;
         }
     }

@@ -1,3 +1,4 @@
+import Text from "../../foundation/Text";
 import { MenuWrapper } from "./styles/MenuWrapper";
 
 export default function Menu(props) {
@@ -37,9 +38,9 @@ export default function Menu(props) {
                 {
                     itens.map( item => (
                             <li key={item.url}>
-                                <a href={item.url}>
+                                <Text as="a" href={item.url}>
                                     {item.name}
-                                </a>
+                                </Text>
                             </li>
                         )
                     )
