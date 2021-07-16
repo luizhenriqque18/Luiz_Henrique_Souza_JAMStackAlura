@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Text from "../../foundation/Text";
 
 const FooterWrapper = styled.footer`
   padding: 14px;
@@ -6,7 +7,8 @@ const FooterWrapper = styled.footer`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  a {
+
+  /* a {
     color: ${({ theme }) => theme.colors.primary.main.color};
     text-decoration: none;
     transition: .3s;
@@ -14,7 +16,7 @@ const FooterWrapper = styled.footer`
     &:focus {
       opacity: .5;
     }
-  }
+  } */
 `;
 
 FooterWrapper.MediaShareSocial = styled.div`
@@ -23,7 +25,7 @@ FooterWrapper.MediaShareSocial = styled.div`
   
   a {
     font-size: 24px;
-    padding: 14px;
+    padding: 0 14px 0 14px;
     text-align: center;
     display: block;
     text-decoration: none;
@@ -41,11 +43,13 @@ const Footer = () => {
     return (
     <FooterWrapper>
         <FooterWrapper.MediaShareSocial>
-              <a target="_blank" href="https://www.linkedin.com/in/luiz-henrique-oliveira-de-souza-b823a8127"><ion-icon name="logo-linkedin"></ion-icon></a>
-              <a target="_blank" href="https://twitter.com/luizhenriqque15"><ion-icon name="logo-twitter"></ion-icon></a>
-              <a target="_blank" href="https://github.com/luizhenriqque18"><ion-icon name="logo-github"></ion-icon></a>
+              <Text as="a" target="_blank" href="https://www.linkedin.com/in/luiz-henrique-oliveira-de-souza-b823a8127"><ion-icon name="logo-linkedin"></ion-icon></Text>
+              <Text as="a" target="_blank" href="https://twitter.com/luizhenriqque15"><ion-icon name="logo-twitter"></ion-icon></Text>
+              <Text as="a" target="_blank" href="https://github.com/luizhenriqque18"><ion-icon name="logo-github"></ion-icon></Text>
         </FooterWrapper.MediaShareSocial>
-        <p>© 2021 Dev. made by luizhenriqque18</p>
+        <Text tag='p' variant='paragraph2'>
+          © 2021 Dev. made by luizhenriqque18
+        </Text>
     </FooterWrapper>
     )
 }
