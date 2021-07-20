@@ -1,7 +1,9 @@
+import { breakpoints } from '../utils/adptions-css-script';
 import colors from './colors';
 import typography from './typography';
 
 const theme = {
+    breakpoints,
     colors,
     typography,
     borderRadius: '6px',
